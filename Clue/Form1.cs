@@ -20,6 +20,7 @@ namespace Clue
     public partial class Form1 : Form
     {
         Form2 notePad;
+        Suggest suggest;
 
         int[,] clue_map;
         Point[,] clue_map_point;
@@ -37,16 +38,17 @@ namespace Clue
         string[] weapon = { "촛대", "파이프", "리볼버", "밧줄", "렌치", "단검" };
         string[] room = { "주방", "공부방", "무도회장", "온실", "식당", "당구장", "서재", "라운지", "홀" };
 
-        void EndTurn()
-        {
-            currentTurnPlayer = (currentTurnPlayer + 1) % playerList.Length;
-        }
+        PictureBox[] playerPics = new PictureBox[6];
+        
+
 
         class Player
         {
+            public string playerName;
+
             public string name;
             public int id;
-            //public PictureBox player;
+            public PictureBox playerPic;
 
             public List<Card> cards;
 
@@ -58,20 +60,28 @@ namespace Clue
             public bool isInRoom = false;
         }
 
-        public void AddPlayer(int id, string name)
+        public void AddPlayer(int id, string playerName)
         {
             Player player = new Player();
             player.id = id;
-            player.name = name;
+            player.playerName = playerName;
             player.cards = new List<Card>();
             playerList[id] = player;
+
+            string[] names = { "Green", "Mustard", "Peacock", "Plum", "Scarlett", "White" };
 
             //player(7,0) (17,0) (24,7) (0,14) (6,23) (19,23)
             int[] initialX = { 7, 17, 24, 0, 6, 19 };
             int[] initialY = { 0, 0, 7, 14, 23, 23 };
 
+            player.name = names[id];
+            player.playerPic = playerPics[id];
             player.x = initialX[id];
             player.y = initialY[id];
+
+            player.playerPic.Location = clue_map_point[player.x, player.y];
+            clue_map[initialX[id], initialY[id]] = 3;
+
             player.isTurn = false;
             player.isInRoom = false;
             player.isAlive = true;
@@ -145,7 +155,7 @@ namespace Clue
             //홀(18,11) (18,12) (20,14)
             //공부방(21,18), 주방 비밀통로
 
-            player1.Location = clue_map_point[7, 0];
+           /* player1.Location = clue_map_point[7, 0];
             clue_map[7, 0] = 3;
             Player firstPlayer = new Player();
             firstPlayer.x = 7;
@@ -158,6 +168,13 @@ namespace Clue
             secondPlayer.x = 23;
             secondPlayer.y = 6;
             playerList[1] = secondPlayer;
+           */
+            AddPlayer(0, "Green");
+            AddPlayer(1, "Mustard");
+            AddPlayer(2, "Peacock");
+            AddPlayer(3, "Plum");
+            AddPlayer(4, "Scarlett");
+            AddPlayer(5, "White");
         }
 
         private void InitializeClueMap_Point()
@@ -197,9 +214,19 @@ namespace Clue
         public Form1()
         {
             InitializeComponent();
+
+            playerPics[0] = player1;
+            playerPics[1] = player2;
+            playerPics[2] = player3;
+            playerPics[3] = player4;
+            playerPics[4] = player5;
+            playerPics[5] = player6;
+
             InitializeClueMap_Point();
             InitializeClueMap();
             OpenPlayerChooseForm();
+
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -207,6 +234,10 @@ namespace Clue
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             player1.SizeMode = PictureBoxSizeMode.StretchImage;
             player2.SizeMode = PictureBoxSizeMode.StretchImage;
+            player3.SizeMode = PictureBoxSizeMode.StretchImage;
+            player4.SizeMode = PictureBoxSizeMode.StretchImage;
+            player5.SizeMode = PictureBoxSizeMode.StretchImage;
+            player6.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void btnRoll_Click(object sender, EventArgs e)
@@ -222,27 +253,27 @@ namespace Clue
         {
             if (lbRemain.Text != "0")
             {
-                if (playerList[0].x - 1 < 0)
+                if (playerList[currentTurnPlayer].x - 1 < 0)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                if (clue_map[playerList[0].x - 1, playerList[0].y] == 1)
+                if (clue_map[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y] == 1)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
-                else if (clue_map[playerList[0].x - 1, playerList[0].y] == 3)
+                else if (clue_map[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                player1.Location = clue_map_point[playerList[0].x - 1, playerList[0].y];
-                clue_map[playerList[0].x, playerList[0].y] = 0;
-                clue_map[playerList[0].x - 1, playerList[0].y] = 3;
-                playerList[0].x -= 1;
+                playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y];
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                clue_map[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y] = 3;
+                playerList[currentTurnPlayer].x -= 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
             }
@@ -252,27 +283,27 @@ namespace Clue
         {
             if (lbRemain.Text != "0")
             {
-                if(playerList[0].x + 1 > 24)
+                if(playerList[currentTurnPlayer].x + 1 > 24)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                if (clue_map[playerList[0].x + 1, playerList[0].y] == 1)
+                if (clue_map[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y] == 1)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
-                else if (clue_map[playerList[0].x + 1, playerList[0].y] == 3)
+                else if (clue_map[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                    player1.Location = clue_map_point[playerList[0].x + 1, playerList[0].y];
-                clue_map[playerList[0].x, playerList[0].y] = 0;
-                clue_map[playerList[0].x + 1, playerList[0].y] = 3;
-                playerList[0].x += 1;
+                playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y];
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                clue_map[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y] = 3;
+                playerList[currentTurnPlayer].x += 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
             }
@@ -282,27 +313,27 @@ namespace Clue
         {
             if (lbRemain.Text != "0")
             {
-                if (playerList[0].y + 1 > 23)
+                if (playerList[currentTurnPlayer].y + 1 > 23)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                if (clue_map[playerList[0].x, playerList[0].y + 1] == 1)
+                if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1] == 1)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
-                else if (clue_map[playerList[0].x, playerList[0].y + 1] == 3)
+                else if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                player1.Location = clue_map_point[playerList[0].x, playerList[0].y + 1];
-                clue_map[playerList[0].x, playerList[0].y] = 0;
-                clue_map[playerList[0].x, playerList[0].y + 1] = 3;
-                playerList[0].y += 1;
+                playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1];
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1] = 3;
+                playerList[currentTurnPlayer].y += 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
             }
@@ -312,27 +343,27 @@ namespace Clue
         {
             if (lbRemain.Text != "0")
             {
-                if (playerList[0].y - 1 < 0)
+                if (playerList[currentTurnPlayer].y - 1 < 0)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                if (clue_map[playerList[0].x, playerList[0].y - 1] == 1)
+                if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1] == 1)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
-                else if (clue_map[playerList[0].x, playerList[0].y - 1] == 3)
+                else if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1] == 3)
                 {
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
 
-                player1.Location = clue_map_point[playerList[0].x, playerList[0].y - 1];
-                clue_map[playerList[0].x, playerList[0].y] = 0;
-                clue_map[playerList[0].x, playerList[0].y - 1] = 3;
-                playerList[0].y -= 1;
+                playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1];
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1] = 3;
+                playerList[currentTurnPlayer].y -= 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
             }
@@ -343,12 +374,22 @@ namespace Clue
             lbRemain.Text = "0";
             btnRoll.Enabled = true;
             btnTurnEnd.Enabled = false;
+
+            currentTurnPlayer = (currentTurnPlayer + 1) % playerList.Length;
+
+            //다음 플레이어에게 턴 넘기기
         }
 
         private void btnNote_Click(object sender, EventArgs e)
         {
             notePad = new Form2();
             notePad.Show();
+        }
+
+        private void btnSug_Click(object sender, EventArgs e)
+        {
+            suggest = new Suggest();
+            suggest.Show();
         }
     }
 }

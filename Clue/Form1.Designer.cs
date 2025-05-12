@@ -44,9 +44,17 @@
             this.btnNote = new System.Windows.Forms.Button();
             this.btnSug = new System.Windows.Forms.Button();
             this.btnFinalSug = new System.Windows.Forms.Button();
+            this.player3 = new System.Windows.Forms.PictureBox();
+            this.player4 = new System.Windows.Forms.PictureBox();
+            this.player5 = new System.Windows.Forms.PictureBox();
+            this.player6 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player6)).BeginInit();
             this.SuspendLayout();
             // 
             // btnRoll
@@ -148,7 +156,7 @@
             // player1
             // 
             this.player1.Image = ((System.Drawing.Image)(resources.GetObject("player1.Image")));
-            this.player1.Location = new System.Drawing.Point(10, 10);
+            this.player1.Location = new System.Drawing.Point(978, 472);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(25, 25);
             this.player1.TabIndex = 11;
@@ -157,7 +165,7 @@
             // player2
             // 
             this.player2.Image = ((System.Drawing.Image)(resources.GetObject("player2.Image")));
-            this.player2.Location = new System.Drawing.Point(729, 499);
+            this.player2.Location = new System.Drawing.Point(1050, 472);
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(25, 25);
             this.player2.TabIndex = 12;
@@ -181,6 +189,7 @@
             this.btnSug.TabIndex = 14;
             this.btnSug.Text = "Suggest";
             this.btnSug.UseVisualStyleBackColor = true;
+            this.btnSug.Click += new System.EventHandler(this.btnSug_Click);
             // 
             // btnFinalSug
             // 
@@ -192,11 +201,51 @@
             this.btnFinalSug.Text = "Final\r\nSuggest";
             this.btnFinalSug.UseVisualStyleBackColor = true;
             // 
+            // player3
+            // 
+            this.player3.Image = ((System.Drawing.Image)(resources.GetObject("player3.Image")));
+            this.player3.Location = new System.Drawing.Point(1118, 472);
+            this.player3.Name = "player3";
+            this.player3.Size = new System.Drawing.Size(25, 25);
+            this.player3.TabIndex = 16;
+            this.player3.TabStop = false;
+            // 
+            // player4
+            // 
+            this.player4.Image = ((System.Drawing.Image)(resources.GetObject("player4.Image")));
+            this.player4.Location = new System.Drawing.Point(1201, 472);
+            this.player4.Name = "player4";
+            this.player4.Size = new System.Drawing.Size(25, 25);
+            this.player4.TabIndex = 17;
+            this.player4.TabStop = false;
+            // 
+            // player5
+            // 
+            this.player5.Image = ((System.Drawing.Image)(resources.GetObject("player5.Image")));
+            this.player5.Location = new System.Drawing.Point(1281, 472);
+            this.player5.Name = "player5";
+            this.player5.Size = new System.Drawing.Size(25, 25);
+            this.player5.TabIndex = 18;
+            this.player5.TabStop = false;
+            // 
+            // player6
+            // 
+            this.player6.Image = ((System.Drawing.Image)(resources.GetObject("player6.Image")));
+            this.player6.Location = new System.Drawing.Point(1349, 472);
+            this.player6.Name = "player6";
+            this.player6.Size = new System.Drawing.Size(25, 25);
+            this.player6.TabIndex = 19;
+            this.player6.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1483, 1023);
+            this.Controls.Add(this.player6);
+            this.Controls.Add(this.player5);
+            this.Controls.Add(this.player4);
+            this.Controls.Add(this.player3);
             this.Controls.Add(this.btnFinalSug);
             this.Controls.Add(this.btnSug);
             this.Controls.Add(this.btnNote);
@@ -218,6 +267,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,6 +293,10 @@
         private System.Windows.Forms.Button btnNote;
         private System.Windows.Forms.Button btnSug;
         private System.Windows.Forms.Button btnFinalSug;
+        private System.Windows.Forms.PictureBox player3;
+        private System.Windows.Forms.PictureBox player4;
+        private System.Windows.Forms.PictureBox player5;
+        private System.Windows.Forms.PictureBox player6;
     }
 }
 

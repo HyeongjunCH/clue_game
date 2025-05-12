@@ -10,3 +10,16 @@ C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.exe
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.pdb
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.Form2.resources
 C:\Users\USER\CS_doc\Clue\Clue\obj\Debug\Clue.PlayerChoose.resources
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\bin\Debug\Clue.exe.config
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\bin\Debug\Clue.exe
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\bin\Debug\Clue.pdb
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.Form1.resources
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.Form2.resources
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.PlayerChoose.resources
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.Properties.Resources.resources
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.csproj.GenerateResource.cache
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.exe
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.pdb
+C:\Users\USER\OneDrive\바탕 화면\새 폴더\Clue\Clue\obj\Debug\Clue.Suggest.resources

@@ -1,30 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\CS_doc\\Clue\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\CS_doc\\Clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\CS_doc\\Clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|c:\\users\\user\\cs_doc\\clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\CS_doc\\Clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|c:\\users\\user\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\CS_doc\\Clue\\clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\playerchoose.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\CS_doc\\Clue\\clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A5B079E8-8277-43C0-902B-1143D33EFA8C}|Clue\\Clue.csproj|solutionrelative:clue\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,15 +58,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form1.cs",
               "RelativeDocumentMoniker": "Clue\\Form1.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form1.cs [\uB514\uC790\uC778]",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Clue\\Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-29T00:45:13.668Z",
@@ -54,67 +78,138 @@
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form1.cs",
               "RelativeDocumentMoniker": "Clue\\Form1.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form1.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form1.cs",
               "RelativeToolTip": "Clue\\Form1.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAD4v7UAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAMsAAAAAAAAAAIA5wN4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T03:26:41.51Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-29T03:26:41.51Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlayerChoose.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\PlayerChoose.cs",
-              "RelativeDocumentMoniker": "Clue\\PlayerChoose.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\PlayerChoose.cs",
-              "RelativeToolTip": "Clue\\PlayerChoose.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAD4vxoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Room.cs",
+              "RelativeDocumentMoniker": "Clue\\Room.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Room.cs",
+              "RelativeToolTip": "Clue\\Room.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T07:22:58.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerChoose.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\PlayerChoose.cs",
-              "RelativeDocumentMoniker": "Clue\\PlayerChoose.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\PlayerChoose.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Clue\\PlayerChoose.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T07:06:19.731Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-12T01:51:40.563Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form2.cs",
-              "RelativeDocumentMoniker": "Clue\\Form2.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form2.cs",
-              "RelativeToolTip": "Clue\\Form2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Board.cs",
+              "RelativeDocumentMoniker": "Clue\\Board.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Board.cs",
+              "RelativeToolTip": "Clue\\Board.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:15:49.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T01:49:57.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Card.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Card.cs",
+              "RelativeDocumentMoniker": "Clue\\Card.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Card.cs",
+              "RelativeToolTip": "Clue\\Card.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:45:49.721Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form2.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form2.cs",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Player.cs",
+              "RelativeDocumentMoniker": "Clue\\Player.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Player.cs",
+              "RelativeToolTip": "Clue\\Player.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:43:30.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\GameManager.cs",
+              "RelativeDocumentMoniker": "Clue\\GameManager.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\GameManager.cs",
+              "RelativeToolTip": "Clue\\GameManager.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswB4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:39:50.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Game.cs",
+              "RelativeDocumentMoniker": "Clue\\Game.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Game.cs",
+              "RelativeToolTip": "Clue\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAmwB8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T01:33:51.925Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlayerChoose.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\PlayerChoose.cs",
+              "RelativeDocumentMoniker": "Clue\\PlayerChoose.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\PlayerChoose.cs",
+              "RelativeToolTip": "Clue\\PlayerChoose.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwC0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T07:22:58.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PlayerChoose.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\PlayerChoose.cs",
+              "RelativeDocumentMoniker": "Clue\\PlayerChoose.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\PlayerChoose.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Clue\\PlayerChoose.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T07:06:19.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form2.cs",
               "RelativeDocumentMoniker": "Clue\\Form2.cs",
-              "ToolTip": "C:\\Users\\USER\\CS_doc\\Clue\\Clue\\Form2.cs [\uB514\uC790\uC778]",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form2.cs",
+              "RelativeToolTip": "Clue\\Form2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-08T06:15:49.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form2.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form2.cs",
+              "RelativeDocumentMoniker": "Clue\\Form2.cs",
+              "ToolTip": "C:\\Users\\USER\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\\uC0C8 \uD3F4\uB354\\Clue\\Clue\\Form2.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Clue\\Form2.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-08T06:08:44.83Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-08T06:08:44.83Z"
             }
           ]
         }

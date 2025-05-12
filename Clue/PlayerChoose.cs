@@ -19,12 +19,12 @@ namespace Clue
 
 
 
+
         private void button1_Click(object sender, EventArgs e)
         {
             int playerCount = 0;
             string player = comboBox1.Text;
             playerCount = Convert.ToInt32(player);
-
 
             // Assuming you have a method to start the game with the selected number of players
             StartGame(playerCount);
@@ -43,7 +43,14 @@ namespace Clue
             // Game game = new Game(playerCount);
             // game.Start();
 
-            
+            Game game = new Game(playerCount);
+            // Start the game with the selected number of players
+            // You can add your game logic here
+            // For example, you can initialize the game board, deal cards, etc.
+            // game.Initialize();
+            // game.DealCards();
+
+
         }
     }
 }
