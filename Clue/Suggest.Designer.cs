@@ -34,7 +34,7 @@
             this.txbRoom = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSug = new System.Windows.Forms.Button();
+            this.btnSuggest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbChara
@@ -98,26 +98,26 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(369, 119);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 24);
+            this.label3.Size = new System.Drawing.Size(58, 24);
             this.label3.TabIndex = 5;
-            this.label3.Text = "이(가)";
+            this.label3.Text = "에서";
             // 
-            // btnSug
+            // btnSuggest
             // 
-            this.btnSug.Location = new System.Drawing.Point(236, 301);
-            this.btnSug.Name = "btnSug";
-            this.btnSug.Size = new System.Drawing.Size(280, 82);
-            this.btnSug.TabIndex = 6;
-            this.btnSug.Text = "살인을 했어!";
-            this.btnSug.UseVisualStyleBackColor = true;
-            this.btnSug.Click += new System.EventHandler(this.btnSug_Click);
+            this.btnSuggest.Location = new System.Drawing.Point(236, 301);
+            this.btnSuggest.Name = "btnSuggest";
+            this.btnSuggest.Size = new System.Drawing.Size(280, 82);
+            this.btnSuggest.TabIndex = 6;
+            this.btnSuggest.Text = "살인을 했어!";
+            this.btnSuggest.UseVisualStyleBackColor = true;
+            this.btnSuggest.Click += new System.EventHandler(this.btnSuggest_Click);
             // 
             // Suggest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSug);
+            this.Controls.Add(this.btnSuggest);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txbRoom);
@@ -139,6 +139,6 @@
         private System.Windows.Forms.TextBox txbRoom;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnSug;
+        private System.Windows.Forms.Button btnSuggest;
     }
 }

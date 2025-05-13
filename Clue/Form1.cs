@@ -123,7 +123,7 @@ namespace Clue
                 { 1, 1, 1, 4, 1, 1, 0, 0, 1, 1, 1, 4, 1, 1, 1, 1, 0, 0, 1, 1, 1, 4, 1, 1},
                 { 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 1},
                 { 1, 1, 1, 1, 1, 1, 0, 0, 2, 1, 1, 1, 1, 1, 1, 2, 0, 0, 0, 2, 1, 1, 1, 1},
-                { 1, 1, 1, 1, 2, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                { 1, 1, 1, 1, 2, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1},
                 { 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 1, 1, 1, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0},
                 { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1},
                 { 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 1, 1, 1},
@@ -155,20 +155,7 @@ namespace Clue
             //홀(18,11) (18,12) (20,14)
             //공부방(21,18), 주방 비밀통로
 
-           /* player1.Location = clue_map_point[7, 0];
-            clue_map[7, 0] = 3;
-            Player firstPlayer = new Player();
-            firstPlayer.x = 7;
-            firstPlayer.y = 0;
-            playerList[0] = firstPlayer;
-
-            player2.Location = clue_map_point[6, 23];
-            clue_map[6, 23] = 3;
-            Player secondPlayer = new Player();
-            secondPlayer.x = 23;
-            secondPlayer.y = 6;
-            playerList[1] = secondPlayer;
-           */
+           
             AddPlayer(0, "Green");
             AddPlayer(1, "Mustard");
             AddPlayer(2, "Peacock");
@@ -202,15 +189,6 @@ namespace Clue
             return random.Next(2, 13);
         }
 
-        private bool isDoor(int x, int y)
-        {
-            if (clue_map[x, y] == 2)
-            {
-                return true;
-            }
-            return false;
-        }
-
         public Form1()
         {
             InitializeComponent();
@@ -225,8 +203,6 @@ namespace Clue
             InitializeClueMap_Point();
             InitializeClueMap();
             OpenPlayerChooseForm();
-
-           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -238,6 +214,8 @@ namespace Clue
             player4.SizeMode = PictureBoxSizeMode.StretchImage;
             player5.SizeMode = PictureBoxSizeMode.StretchImage;
             player6.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            MessageBox.Show(playerList[currentTurnPlayer].playerName + "의 턴입니다.");
         }
 
         private void btnRoll_Click(object sender, EventArgs e)
@@ -269,9 +247,27 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
-
+                else if (clue_map[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y] == 2)
+                {
+                    playerList[currentTurnPlayer].isInRoom = true;
+                    MessageBox.Show("방에 들어갔습니다.");
+                    btnSug.Enabled = true;
+                    clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    lbRemain.Text = "1";
+                }
+                else
+                {
+                    //문에서 나온경우 2로 바꿈
+                    if (playerList[currentTurnPlayer].isInRoom)
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 2;
+                    else
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    playerList[currentTurnPlayer].isInRoom = false;
+                    btnSug.Enabled = false;
+                }
                 playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y];
-                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+
+                //이동한 곳은 3으로 바꿈
                 clue_map[playerList[currentTurnPlayer].x - 1, playerList[currentTurnPlayer].y] = 3;
                 playerList[currentTurnPlayer].x -= 1;
 
@@ -299,9 +295,28 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
+                else if (clue_map[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y] == 2)
+                {
+                    playerList[currentTurnPlayer].isInRoom = true;
+                    MessageBox.Show("방에 들어갔습니다.");
+                    btnSug.Enabled = true;
+                    clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    lbRemain.Text = "1";
+                }
+                else
+                {
+                    //문에서 나온경우 2로 바꿈
+                    if (playerList[currentTurnPlayer].isInRoom)
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 2;
+                    else
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    playerList[currentTurnPlayer].isInRoom = false;
+                    btnSug.Enabled = false;
+                }
 
                 playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y];
-                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+
+                //이동할 곳은 3으로 바꿈
                 clue_map[playerList[currentTurnPlayer].x + 1, playerList[currentTurnPlayer].y] = 3;
                 playerList[currentTurnPlayer].x += 1;
 
@@ -329,13 +344,33 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
+                else if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1] == 2)
+                {
+                    playerList[currentTurnPlayer].isInRoom = true;
+                    MessageBox.Show("방에 들어갔습니다.");
+                    btnSug.Enabled = true;
+                    clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    lbRemain.Text = "1";
+                }
+                else
+                {
+                    //문에서 나온경우 2로 바꿈
+                    if (playerList[currentTurnPlayer].isInRoom)
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 2;
+                    else
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    playerList[currentTurnPlayer].isInRoom = false;
+                    btnSug.Enabled = false;
+                }
 
                 playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1];
-                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+
+                //이동할 곳은 3으로 바꿈
                 clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y + 1] = 3;
                 playerList[currentTurnPlayer].y += 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
+
             }
         }
 
@@ -359,24 +394,46 @@ namespace Clue
                     MessageBox.Show("이동할 수 없습니다.");
                     return;
                 }
+                else if (clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1] == 2)
+                {
+                    playerList[currentTurnPlayer].isInRoom = true;
+                    MessageBox.Show("방에 들어갔습니다.");
+                    btnSug.Enabled = true;
+                    clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    lbRemain.Text = "1";
+                }
+                else
+                {
+                    //문에서 나온경우 2로 바꿈
+                    if (playerList[currentTurnPlayer].isInRoom)
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 2;
+                    else
+                        clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+                    playerList[currentTurnPlayer].isInRoom = false;
+                    btnSug.Enabled = false;
+                }
 
                 playerPics[currentTurnPlayer].Location = clue_map_point[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1];
-                clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y] = 0;
+
+                //이동할 곳은 3으로 바꿈
                 clue_map[playerList[currentTurnPlayer].x, playerList[currentTurnPlayer].y - 1] = 3;
                 playerList[currentTurnPlayer].y -= 1;
 
                 lbRemain.Text = (int.Parse(lbRemain.Text) - 1).ToString();
+
             }
         }
 
         private void btnTurnEnd_Click(object sender, EventArgs e)
         {
             lbRemain.Text = "0";
+            dice1.Text = "0";
+
             btnRoll.Enabled = true;
             btnTurnEnd.Enabled = false;
 
             currentTurnPlayer = (currentTurnPlayer + 1) % playerList.Length;
-
+            MessageBox.Show(playerList[currentTurnPlayer].playerName + "의 턴입니다.");
             //다음 플레이어에게 턴 넘기기
         }
 
